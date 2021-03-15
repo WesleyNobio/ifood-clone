@@ -1,0 +1,49 @@
+.div_menu_2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    .menu-2 {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+
+        .menu-drop-down {
+            padding-bottom: 25px;
+            .btn-menu{
+                float: right;
+            }
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            @include flex-padrao(flex, initial, initial, column);
+        }
+
+        li {
+            @include flex-grow;        
+        }
+
+        a {
+            padding: 20px 0px;
+            text-decoration: none;
+            color: $cor-gry-strong;
+            font-size: 1rem;
+
+            &:hover {
+                color: $cor-red;
+            }
+        }
+
+        button {
+            @include but-config-basico;
+            @include background-and-color(#fff, $cor-red);
+            padding: 20px 0px;
+            font-size: 1rem;
+            border-radius: 3px;
+        }
+    }
+}

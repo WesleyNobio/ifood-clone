@@ -1,0 +1,21 @@
+@import '../variaveis/variaveis';
+
+header {
+    @include flex-padrao(flex, flex-start, center, column);
+    background-color: #f5f3f4;
+    height: 515px;
+    position: relative;
+}
+
+@import 'h_background';
+@import 'h_nav';
+@import 'h_main';
+@import 'div_menu_2';
+
+@media screen and (max-width: 960px) {
+    header {
+        height: 100vh;
+        max-height: 690px;
+        min-height: 550px;
+    }
+}

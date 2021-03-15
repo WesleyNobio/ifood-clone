@@ -1,0 +1,27 @@
+$cor-red: #ea1D2c;
+$cor-gry: #717171;
+$cor-gry-strong: #3e3e3e;
+$cor-gry-weak: #a6a6a6;
+
+@mixin flex-padrao($d: flex, $j-c: center, $a-i: initial, $f-d: row) {
+    display: $d;
+    justify-content: $j-c;
+    align-items: $a-i;
+    flex-direction: $f-d;
+}
+
+@mixin but-config-basico {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin background-and-color($bc: #717171, $c: #ae1D2c) {
+    background-color: $bc;
+    color: $c;
+}
+
+@mixin flex-grow($d: flex, $f-g: 1) {
+    display: $d;
+    flex-grow: $f-g;
+}

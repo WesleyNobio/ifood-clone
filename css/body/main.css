@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
