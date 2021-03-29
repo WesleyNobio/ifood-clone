@@ -3,6 +3,7 @@
 header {
     @include flex-padrao(flex, flex-start, center, column);
     background-color: #f5f3f4;
+    width: 100%;
     height: 515px;
     position: relative;
 }

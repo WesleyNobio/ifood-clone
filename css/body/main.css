@@ -10,10 +10,9 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   display: flex;
-  justify-content: initial;
-  align-items: initial;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  overflow-x: hidden;
   height: 100%;
 }
 

@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: Helvetica, sans-serif;
-    @include flex-padrao(flex, initial, initial, column);
-    overflow-x: hidden;
+    @include flex-padrao(flex, flex-start, center, column);
+    // overflow-x: hidden;
     height: 100%;
 }
