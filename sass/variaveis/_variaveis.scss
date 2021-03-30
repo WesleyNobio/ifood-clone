@@ -10,10 +10,10 @@ $cor-gry-weak: #a6a6a6;
     flex-direction: $f-d;
 }
 
-@mixin but-config-basico {
+@mixin but-config-basico($cursor: pointer){
     border: 0;
     outline: none;
-    cursor: pointer;
+    cursor: $cursor;
 }
 
 @mixin background-and-color($bc: #717171, $c: #ae1D2c) {

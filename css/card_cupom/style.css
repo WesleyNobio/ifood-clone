@@ -1,0 +1,88 @@
+.card_cupom {
+  width: calc(100% - 60px);
+  padding: 15px 20px;
+  margin: 20px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 46px auto 15px;
+  column-gap: 15px;
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card_cupom .cc_textos {
+  display: grid;
+  grid-template-rows: 24px 48px 20px;
+}
+.card_cupom .cc_textos .cc_p1 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #3e3e3e;
+}
+.card_cupom .cc_textos .cc_p2 {
+  font-size: 0.9rem;
+  color: #717171;
+}
+.card_cupom .cc_textos .cc_btn_criar {
+  background-color: transparent;
+  color: #ea1D2c;
+  border: 0;
+  outline: none;
+  cursor: initial;
+  padding: 0;
+  font-weight: bold;
+  text-align: start;
+}
+.card_cupom .cc_btn_fechar {
+  display: none;
+}
+
+.cc1 {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .card_cupom {
+    grid-template-columns: 46px auto;
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 960px) {
+  .cc1 {
+    display: grid;
+  }
+}
+@media screen and (min-width: 960px) {
+  .card_cupom {
+    position: absolute;
+    width: 333px;
+    background-color: white;
+    z-index: 100;
+    margin: 86px 0px 0px 19rem;
+    grid-template-rows: repeat(4, 25px);
+  }
+  .card_cupom .cc_btn_fechar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #717171;
+  }
+  .card_cupom .cc_btn_fechar .cc_x {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card_cupom {
+    margin: 86px 0px 0px 25rem;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .card_cupom {
+    margin: 86px 0px 0px 30rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
