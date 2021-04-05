@@ -1,0 +1,131 @@
+.best_card {
+    background-color: transparent;
+    padding: 20px 20px;
+
+    display: grid;
+    grid-template-columns: 85px 1px 1fr;
+    column-gap: 20px;
+
+    border-radius: 5px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $cor-gray-weak;
+    }
+
+    .bc_img {
+        @include flex-padrao(flex, center, center);
+
+        img {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+        }
+    }
+
+    .bc_dividir {
+        background-color: #f2f2f2;
+        width: 1px;
+    }
+
+    .bc_content {
+        display: grid;
+        grid-template-rows: 30px 1fr;
+
+        .bcc_header {
+            display: grid;
+            grid-template-columns: 1fr 30px;
+
+            .bcch_titulo {}
+
+            .bcch_icon_marmita {
+                padding-top: 2px;
+
+                svg {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+
+        .bcc_body {
+
+            p {
+                color: $cor-gray;
+                line-height: 0.93rem;
+                font-size: 0.875rem;
+
+                strong {
+                    color: #e7a74e;
+                    // .bccb_icon_star {}
+                }
+
+                .bccb_separador {
+                    margin: 0px 5px
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .best_card {
+        width: 100%;
+        padding: 15px 15px;
+        grid-template-columns: 64px 1px 1fr;
+        column-gap: 12px;
+        margin-bottom: 12px;
+
+        .bc_img {
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+        }
+
+
+        .bc_content {
+            grid-template-rows: 20px 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .best_card {
+
+        .bc_content {
+    
+            .bcc_header {
+                grid-template-columns: 1fr 10px;
+
+                .bcch_titulo {
+                    font-size: 0.875rem;
+                    overflow: hidden;
+                }
+                .bcch_icon_marmita {
+    
+                    svg {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+    
+            .bcc_body {
+    
+                p {
+                    font-size: 0.75rem;
+    
+                    .bccb_separador {
+                        margin: 0px 2px
+                    }
+                }
+            }
+        }
+    }
+}

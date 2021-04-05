@@ -17,12 +17,12 @@
         .cc_p1 {
             font-weight: bold;
             font-size: 0.9rem;
-            color: $cor-gry-strong;
+            color: $cor-gray-strong;
         }
 
         .cc_p2 {
             font-size: 0.9rem;
-            color: $cor-gry;
+            color: $cor-gray;
         }
 
         .cc_btn_criar {
@@ -69,7 +69,7 @@
         .cc_btn_fechar {
             @include flex-padrao(flex, center, flex-start);
             @include but-config-basico();
-            @include background-and-color(transparent, $cor-gry);
+            @include background-and-color(transparent, $cor-gray);
 
             .cc_x {
                 font-size: 0.9rem;

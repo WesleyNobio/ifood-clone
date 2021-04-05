@@ -12,21 +12,25 @@
   justify-content: flex-start;
   align-items: initial;
   flex-direction: row;
-  width: 1306;
+  width: 1366px;
+  padding: 0px 20px;
 }
 .slider .s-carrocel div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  width: 1306px;
   flex-wrap: nowrap;
+  flex-grow: 1;
 }
 .slider .s-carrocel div .s_img {
   display: flex;
   width: 421px;
   height: 200px;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 10px 0px 10px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .slider .s-carrocel div .s_img img {
   width: 100%;
@@ -56,7 +60,7 @@
 .slider .s-carrocel div .s_btn1 {
   display: none;
   z-index: 1;
-  margin-left: -20px;
+  margin-left: -30px;
   background-image: url("../../assets/img/left-arrow.jpg");
   background-size: cover;
 }
@@ -75,6 +79,7 @@
     justify-content: center;
     align-items: initial;
     flex-direction: row;
+    padding: 0px 0px;
   }
   .slider .s-carrocel div .s_img {
     width: 33.33%;
@@ -95,6 +100,7 @@
   .slider .s-carrocel div .s_img {
     width: 372px;
     height: 200px;
+    margin: 0px 10px 0px 0px;
   }
   .slider .s-carrocel div .s_btn1 {
     display: initial;

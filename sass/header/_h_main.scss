@@ -1,7 +1,7 @@
 .h_main {
     z-index: 2;
     height: 100%;
-    color: $cor-gry-strong;
+    color: $cor-gray-strong;
     @include flex-padrao(flex, flex-end, center, column);
     padding-bottom: 15px;
     text-align: center;
@@ -44,7 +44,7 @@
         .btn1 {
             height: 50px;
             flex-grow: 1;
-            @include background-and-color(#fff, $cor-gry-weak);
+            @include background-and-color(#fff, $cor-gray-weak);
             @include flex-padrao(flex, initial, center);
             margin-right: 15px;
             box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@
         &>a {
             text-decoration: none;
             font-size: 0.875rem;
-            color: $cor-gry;
+            color: $cor-gray;
             padding: 5px;
             border-radius: 3px;
             border: 1px solid rgba(0, 0, 0, 0.1);

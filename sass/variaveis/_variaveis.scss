@@ -1,7 +1,7 @@
 $cor-red: #ea1D2c;
-$cor-gry: #717171;
-$cor-gry-strong: #3e3e3e;
-$cor-gry-weak: #a6a6a6;
+$cor-gray: #717171;
+$cor-gray-strong: #3e3e3e;
+$cor-gray-weak: #a6a6a6;
 
 @mixin flex-padrao($d: flex, $j-c: center, $a-i: initial, $f-d: row) {
     display: $d;

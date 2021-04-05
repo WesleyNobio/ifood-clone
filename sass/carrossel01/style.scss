@@ -8,18 +8,22 @@
 
     .s-carrocel {
         @include flex-padrao(flex, flex-start);
-        width: 1306;
+        width: 1366px;
+        padding: 0px 20px;
 
         div {
             @include flex-padrao(flex, flex-start, center);
+            width: 1306px;
             flex-wrap: nowrap;
+            flex-grow: 1;
 
             .s_img {
                 display: flex;
                 width: 421px;
                 height: 200px;
-                margin: 0px 10px 0px 0px;
+                margin: 0px 10px 0px 10px;
                 overflow: hidden;
+                border-radius: 5px;
 
                 img {
                     width: 100%;
@@ -33,8 +37,6 @@
                     }
                 }
             }
-
-
 
             button {
                 position: absolute;
@@ -50,7 +52,7 @@
             .s_btn1 {
                 display: none;
                 z-index: 1;
-                margin-left: -20px;
+                margin-left: -30px;
                 background-image: url('../../assets/img/left-arrow.jpg');
                 background-size: cover;
             }
@@ -72,6 +74,7 @@
         .s-carrocel {
             width: 100%;
             @include flex-padrao(flex, center);
+            padding: 0px 0px;
 
             div {
 
@@ -97,6 +100,7 @@
                 .s_img {
                     width: 372px;
                     height: 200px;
+                    margin: 0px 10px 0px 0px;
                 }
 
                 .s_btn1 {
@@ -145,6 +149,7 @@
     .slider {
         .s-carrocel {
             div {
+
                 .s_btn1 {
                     margin-left: -80vw;
                 }
