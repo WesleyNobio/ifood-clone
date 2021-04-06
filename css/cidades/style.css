@@ -1,0 +1,82 @@
+.cidades {
+  width: 1366px;
+  padding: 0px 30px;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  padding-bottom: 20px;
+}
+.cidades .cidades_titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.cidades .cidades_titulo h2 {
+  font-size: 1.25rem;
+  color: #3e3e3e;
+}
+.cidades .cidades_titulo a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ea1D2c;
+}
+.cidades .cidades_lista {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #a6a6a6;
+}
+.cidades .cidades_lista ul {
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;
+}
+.cidades .cidades_lista ul li {
+  list-style: none;
+}
+.cidades .cidades_lista ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #717171;
+}
+.cidades .cidades_lista ul li a:hover {
+  color: #3e3e3e;
+}
+
+@media screen and (max-width: 1366px) {
+  .cidades {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cidades .cidades_lista {
+    padding-bottom: 15px;
+  }
+  .cidades .cidades_lista ul {
+    grid-template-rows: repeat(7, 50px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 960px) {
+  .cidades .cidades_lista {
+    padding-bottom: 10px;
+  }
+  .cidades .cidades_lista ul {
+    grid-template-rows: repeat(10, 40px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .cidades .cidades_titulo h2 {
+    font-size: 1.2rem;
+  }
+  .cidades .cidades_titulo a {
+    font-size: 0.9rem;
+  }
+  .cidades .cidades_lista ul {
+    grid-template-rows: repeat(18, 40px);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

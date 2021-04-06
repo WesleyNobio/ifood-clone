@@ -3,7 +3,7 @@
   padding: 0px 30px 30px 30px;
   display: grid;
   grid-template-rows: 51px 132px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   position: relative;
   box-sizing: border-box;
 }
