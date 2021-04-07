@@ -1,0 +1,58 @@
+.aquisicao {
+  max-width: 1366px;
+  width: 100%;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+}
+.aquisicao ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 33px;
+}
+.aquisicao ul li {
+  list-style: none;
+}
+.aquisicao ul li a {
+  display: grid;
+  text-decoration: none;
+  transition: 200ms;
+}
+.aquisicao ul li a:hover {
+  transform: scale(1.03);
+}
+.aquisicao ul li a img {
+  object-fit: contain;
+  width: 100%;
+  height: 132px;
+  background-color: #ffe8e8;
+}
+.aquisicao ul li a .as1 {
+  margin-top: 22px;
+  font-size: 1.125rem;
+  color: #3e3e3e;
+}
+.aquisicao ul li a .as2 {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #a6a6a6;
+}
+
+@media screen and (max-width: 960px) {
+  .aquisicao ul li a .as1 {
+    font-size: 0.875rem;
+  }
+  .aquisicao ul li a .as2 {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .aquisicao ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 33px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
