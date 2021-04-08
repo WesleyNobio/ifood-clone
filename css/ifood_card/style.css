@@ -1,0 +1,11 @@
+.ifood_card {
+  max-width: 1366px;
+  width: 100%;
+  padding: 20px 30px;
+}
+.ifood_card picture img {
+  max-width: 1366px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
