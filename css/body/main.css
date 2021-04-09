@@ -15,5 +15,8 @@ body {
   flex-direction: column;
   height: 100%;
 }
+body::-webkit-scrollbar {
+  width: 0px;
+}
 
 /*# sourceMappingURL=main.css.map */

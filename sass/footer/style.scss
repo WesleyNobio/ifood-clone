@@ -1,0 +1,34 @@
+@import '../variaveis/variaveis';
+
+footer {
+    max-width: 1366px;
+    width: 100%;
+    padding: 20px 30px;
+
+    h3 {
+        font-size: 1rem;
+        color: $cor-gray-strong;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: $cor-gray;
+                transition: 100ms;
+
+                &:hover{
+                    color: $cor-gray-strong;
+                }
+            }
+        }
+    }
+}
+
+@import 'f_sobre';
+@import 'f_cr';
